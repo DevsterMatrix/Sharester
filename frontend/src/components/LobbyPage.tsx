@@ -37,7 +37,7 @@ export function LobbyPage() {
 
         {/* Wordmark */}
         <div className="mb-10 text-center">
-          <h1 className="text-xl font-semibold text-white tracking-tight">ShareDrop</h1>
+          <h1 className="text-xl font-semibold text-white tracking-tight">Sharester</h1>
           <p className="text-[13px] text-[#555] mt-1">peer-to-peer · end-to-end encrypted</p>
         </div>
 
