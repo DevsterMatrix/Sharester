@@ -1,0 +1,14 @@
+{
+  "name": "p2p-share-signaling",
+  "version": "1.0.0",
+  "description": "WebSocket signaling server for P2P file sharing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0",
+    "uuid": "^11.0.0"
+  }
+}

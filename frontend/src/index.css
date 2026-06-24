@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+  body { background: #0a0a0a; color: #e8e8e8; -webkit-font-smoothing: antialiased; }
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 2px; }
+}
+
+.font-mono-code {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* Page fade in */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.3s ease forwards; }
+
+/* Progress shimmer */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.bar-active {
+  background: linear-gradient(90deg, #3b5bdb 0%, #7048e8 50%, #3b5bdb 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s linear infinite;
+}
+
+/* Drop pulse */
+@keyframes drop-pulse {
+  0%, 100% { border-color: rgba(59,91,219,0.5); }
+  50%       { border-color: rgba(59,91,219,0.9); }
+}
+.drop-active { animation: drop-pulse 0.9s ease-in-out infinite; }
