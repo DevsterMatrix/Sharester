@@ -1,5 +1,5 @@
 {
-  "name": "p2p-share-signaling",
+  "name": "Sharester-signaling",
   "version": "1.0.0",
   "description": "WebSocket signaling server for P2P file sharing",
   "main": "server.js",
